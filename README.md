@@ -1,6 +1,6 @@
 # adventofcode
 
-FIXME: AdventOfCode 2015 solutions in clojure
+AdventOfCode 2015 solutions in clojure
 
 ## Usage
 
