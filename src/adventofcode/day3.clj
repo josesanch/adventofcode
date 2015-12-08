@@ -1,4 +1,4 @@
-(ns advendofcode.day3)
+(ns adventofcode.day3)
 
 
 (defn input []

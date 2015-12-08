@@ -1,13 +1,4 @@
-(ns advendofcode.day7)
-(def example ["123 -> x"
-              "456 -> y"
-              "x AND y -> d"
-              "x OR y -> e"
-              "x LSHIFT 2 -> f"
-              "y RSHIFT 2 -> g"
-              "NOT x -> h"
-              "NOT y -> i"
-              ])
+(ns adventofcode.day7)
 
 (defn input []
   (clojure.string/split-lines (slurp "resources/day7.txt")))

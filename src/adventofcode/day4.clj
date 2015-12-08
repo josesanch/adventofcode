@@ -1,4 +1,4 @@
-(ns advendofcode.day4)
+(ns adventofcode.day4)
 
 (import 'java.security.MessageDigest
         'java.math.BigInteger
@@ -18,9 +18,14 @@
 (defn zeros [number string]
   (every? #(= % \0) (take number string)))
 
-(defn day4 [check]
+(defn find-number [check]
   (loop [num 0]
     (let [hexdigest (md5 (str secret-key num))]
       (if (check hexdigest)
         num
         (recur (+ 1 num))))))
+
+
+(defn day4 [] (find-number (partial zeros 5)))
+
+(defn day4-2 [] (find-number (partial zeros 6)))

@@ -1,5 +1,4 @@
-(ns advendofcode.day2
-  )
+(ns adventofcode.day2)
 
 (defn input []
   (clojure.string/split-lines (slurp "resources/day2.txt")))

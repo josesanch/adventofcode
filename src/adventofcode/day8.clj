@@ -1,5 +1,4 @@
-(ns advendofcode.day8
-  (:require [clojure.string :as str]))
+(ns adventofcode.day8)
 
 
 (defn input []
@@ -10,6 +9,9 @@
 
 (defn replace-escapes [line]
   (clojure.string/replace line #"\\\"|\\x[0-9a-f][0-9a-f]|\\\\" "-"))
+
+(defn replace-escapes-2 [line]
+  (clojure.string/escape line {\" "\\\"" \\ "\\\\"}))
 
 (def in-memory-count
   (reduce #(+ % (count (replace-escapes (drop-quotes %2)))) 0 (input)))
