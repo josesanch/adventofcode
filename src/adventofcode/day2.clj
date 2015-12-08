@@ -23,8 +23,7 @@
 (defn paper2 [size]
   (let [[l w h] (map read-string (clojure.string/split size #"x"))
         [ribbon wrap] [(+ l l w  w)
-                       (* l w h)
-                       ]]
+                       (* l w h)]]
     (+ ribbon wrap)))
 
 
