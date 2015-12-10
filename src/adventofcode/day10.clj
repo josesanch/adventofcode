@@ -1,9 +1,6 @@
-(ns adventofcode.day10
-  (:require [taoensso.timbre.profiling :refer [profile p]]
-            [clojure.core.reducers :as r :refer [fold]]))
+(ns adventofcode.day10)
 
 (def input "3113322113")
-
 
 (defn say [[rep num]] (str (count rep) num))
 
@@ -24,7 +21,3 @@
 
 (defn day10-2 []
   (repeat-say input 50))
-
-
-(defn main[]
-  (println (day10)))
