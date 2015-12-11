@@ -10,7 +10,6 @@
 (defn repeat-say [input times]
   (loop [pos 1
          number input]
-    (println pos)
     (if (<= pos times)
       (recur (inc pos) (read-aloud number))
       (count number))))
