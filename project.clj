@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "1.7.170"]
                  [org.clojure/math.combinatorics "0.1.1"]
+                 [cheshire "5.5.0"]
                  ;;[com.taoensso/timbre "4.1.4"]
                  ]
   :main ^:skip-aot adventofcode.core
