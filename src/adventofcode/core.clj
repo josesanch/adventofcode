@@ -13,12 +13,13 @@
    [adventofcode.day10 :refer [day10 day10-2]]
    [adventofcode.day11 :refer [day11 day11-2]]
    [adventofcode.day12 :refer [day12 day12-2]]
+   [adventofcode.day13 :refer [day13 day13-2]]
    ))
 
 (defn -main
   "Advent of code"
   [& args]
-  (doseq [day (range 1 13)
+  (doseq [day (if-not (nil? args) args (range 1 14))
           part ["" "-2"]]
 
     (let [prog (str "adventofcode.day" day "/day" day part)]
