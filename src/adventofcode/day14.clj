@@ -23,14 +23,7 @@
                                                       (data :time)))
      (* (min (data :time)
              (rem time interval))
-        (data :speed)))
-    ))
-
-;; (* (data :speed)
-;;    (data :time)
-;;    (Math/ceil (/ time interval)))))
-
-
+        (data :speed)))))
 
 (defn calc-distances-at-time [data time]
   (sort-by
@@ -54,7 +47,6 @@
 
 (defn day14-2 []
   (let [data (parse-input input)]
-
     (sort-by
      val >
      (frequencies
