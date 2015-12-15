@@ -14,6 +14,8 @@
    [adventofcode.day11 :refer [day11 day11-2]]
    [adventofcode.day12 :refer [day12 day12-2]]
    [adventofcode.day13 :refer [day13 day13-2]]
+   [adventofcode.day14 :refer [day14 day14-2]]
+   [adventofcode.day15 :refer [day15 day15-2]]
    ))
 
 (defn -main
