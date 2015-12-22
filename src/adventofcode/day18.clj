@@ -10,17 +10,6 @@
        (map #(= % "#"))
        (apply vector)))
 
-
-;; (def input
-;;   (->>  ["##.#.#"
-;;          "...##."
-;;          "#....#"
-;;          "..#..."
-;;          "#.#..#"
-;;          "####.#"]
-;;         prepare)
-;;   )
-
 (def input
   (->> "resources/day18.txt"
        slurp
